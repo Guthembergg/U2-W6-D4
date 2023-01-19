@@ -1,9 +1,16 @@
-aside {
-  background-color: #f1f1f1;
+@mixin BaseAside($color, $position) {
+  background-color: $color;
   padding: 20px;
-
-  position: absolute;
+  position: $position;
   right: 0;
+}
+
+aside {
+  @include BaseAside(#f1f1f1, absolute);
+  @media screen and (max-width: 467px) {
+    @include BaseAside(#f8c8c8, static);
+    position: static;
+  }
 }
 aside ul {
   display: flex;
