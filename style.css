@@ -23,14 +23,14 @@ nav a {
 }
 
 footer {
-  background-color: #f1f1f1;
   text-align: center;
-  height: 50px;
-  bottom: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer p {
+  padding: 0;
 }
 
 .color-0 {
@@ -121,13 +121,12 @@ body {
 
 #services {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 h1,
 p {
-  margin: 20px;
-  padding-top: 10px;
+  margin: 15px;
 }
 
 main {
@@ -139,14 +138,19 @@ section {
   margin: 20px 0;
 }
 
+ul {
+  font-size: 1.2em;
+}
+
 h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  font-size: 2.5em;
+  padding-top: 10px;
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 1.5em;
+  padding-bottom: 15px;
 }
 
 form {
@@ -191,10 +195,6 @@ input[type=submit] {
 
 img {
   width: 100%;
-}
-
-#about p {
-  width: 70%;
 }
 
 .color-0 {

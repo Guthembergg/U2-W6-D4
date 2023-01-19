@@ -7,12 +7,11 @@ body {
 }
 #services {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 h1,
 p {
-  margin: 20px;
-  padding-top: 10px;
+  margin: 15px;
 }
 main {
   margin: 2.5%;
@@ -23,15 +22,18 @@ main {
 section {
   margin: 20px 0;
 }
-
+ul {
+  font-size: 1.2em;
+}
 h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  font-size: 2.5em;
+  padding-top: 10px;
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 1.5em;
+  padding-bottom: 15px;
 }
 
 form {
@@ -75,9 +77,4 @@ input[type="submit"] {
 }
 img {
   width: 100%;
-}
-#about {
-  p {
-    width: 70%;
-  }
 }
