@@ -4,15 +4,33 @@
   position: $position;
   right: 0;
 }
+@mixin color-divs($count, $baseName, $startcolor) {
+  $loop_color: $startcolor;
+  @for $i from 0 through $count {
+    $loop_color: darken($loop_color, 6%);
+    .#{$baseName}-#{$i} {
+      background-color: $loop_color;
+      color: invert($startcolor);
+    }
+  }
+}
+@include color-divs(8, "color", rgb(217, 217, 214));
 
 aside {
-  @include BaseAside(#f1f1f1, absolute);
+  @include BaseAside(#5f5f5f, absolute);
   @media screen and (max-width: 467px) {
-    @include BaseAside(#f8c8c8, static);
+    @include BaseAside(#528cee, static);
     position: static;
   }
+  color: white;
 }
 aside ul {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
+@funt;
