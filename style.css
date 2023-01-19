@@ -9,6 +9,9 @@ nav ul {
   padding: 10px;
   display: flex;
 }
+nav ul li:hover {
+  transform: scale(1.2);
+}
 
 nav li {
   margin-right: 20px;
@@ -16,7 +19,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #333333;
+  color: white;
 }
 
 footer {
@@ -30,14 +33,101 @@ footer {
   align-items: center;
 }
 
+.color-0 {
+  background-color: #a8e1ff;
+  color: #571e00;
+}
+
+.color-1 {
+  background-color: #98dbff;
+  color: #672400;
+}
+
+.color-2 {
+  background-color: #89d6ff;
+  color: #762900;
+}
+
+.color-3 {
+  background-color: #7ad1ff;
+  color: #852e00;
+}
+
+.color-4 {
+  background-color: #6bcbff;
+  color: #943400;
+}
+
+.color-5 {
+  background-color: #5bc6ff;
+  color: #a43900;
+}
+
+.color-6 {
+  background-color: #4cc1ff;
+  color: #b33e00;
+}
+
+.color-7 {
+  background-color: #3dbcff;
+  color: #c24300;
+}
+
+.color-8 {
+  background-color: #2db6ff;
+  color: #d24900;
+}
+
+aside {
+  background-color: #5f5f5f;
+  padding: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  box-shadow: 0 0 10px black;
+}
+@media screen and (max-width: 467px) {
+  aside {
+    background-color: #528cee;
+    padding: 20px;
+    position: static;
+    right: 20px;
+    top: 20px;
+    position: static;
+  }
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: circle;
+}
+aside ul a {
+  color: white;
+  text-decoration: none;
+}
+aside ul li:hover {
+  transform: scale(1.09);
+}
+
+@funt;
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #dbf2ff;
 }
 
 #services {
   position: relative;
+  padding-bottom: 20px;
+}
+
+h1,
+p {
+  margin: 20px;
+  padding-top: 10px;
 }
 
 main {
@@ -62,6 +152,10 @@ p {
 form {
   margin-top: 20px;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 
 label {
@@ -80,12 +174,11 @@ textarea {
 }
 
 input[type=submit] {
-  background-color: #4caf50;
-  color: white;
+  background-color: #ffd0b7;
+  color: #002f48;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
 }
 
 #contact {
@@ -93,74 +186,78 @@ input[type=submit] {
   flex-direction: column;
   align-items: center;
   margin-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 img {
   width: 100%;
 }
 
-#about {
-  margin-top: 100px;
+#about p {
+  width: 70%;
 }
 
 .color-0 {
-  background-color: #cacac6;
-  color: #262629;
+  background-color: #a8e1ff;
+  color: #571e00;
 }
 
 .color-1 {
-  background-color: #bcbcb6;
-  color: #262629;
+  background-color: #98dbff;
+  color: #672400;
 }
 
 .color-2 {
-  background-color: #adada6;
-  color: #262629;
+  background-color: #89d6ff;
+  color: #762900;
 }
 
 .color-3 {
-  background-color: #9e9e96;
-  color: #262629;
+  background-color: #7ad1ff;
+  color: #852e00;
 }
 
 .color-4 {
-  background-color: #8f8f87;
-  color: #262629;
+  background-color: #6bcbff;
+  color: #943400;
 }
 
 .color-5 {
-  background-color: #808077;
-  color: #262629;
+  background-color: #5bc6ff;
+  color: #a43900;
 }
 
 .color-6 {
-  background-color: #717168;
-  color: #262629;
+  background-color: #4cc1ff;
+  color: #b33e00;
 }
 
 .color-7 {
-  background-color: #61615a;
-  color: #262629;
+  background-color: #3dbcff;
+  color: #c24300;
 }
 
 .color-8 {
-  background-color: #51514b;
-  color: #262629;
+  background-color: #2db6ff;
+  color: #d24900;
 }
 
 aside {
   background-color: #5f5f5f;
   padding: 20px;
   position: absolute;
-  right: 0;
+  right: 20px;
+  top: 20px;
   color: white;
+  box-shadow: 0 0 10px black;
 }
 @media screen and (max-width: 467px) {
   aside {
     background-color: #528cee;
     padding: 20px;
     position: static;
-    right: 0;
+    right: 20px;
+    top: 20px;
     position: static;
   }
 }
@@ -168,11 +265,14 @@ aside {
 aside ul {
   display: flex;
   flex-direction: column;
-  list-style-type: none;
+  list-style-type: circle;
 }
 aside ul a {
   color: white;
   text-decoration: none;
+}
+aside ul li:hover {
+  transform: scale(1.09);
 }
 
 @funt;/*# sourceMappingURL=style.css.map */
